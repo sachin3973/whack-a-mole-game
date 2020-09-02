@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+      105deg,
+      rgb(253, 250, 73, 0.8),
+      rgb(212, 54, 199, 0.8)
+    )
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #1d1d1d;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.conatainer {
+  width: 80%;
+}
+.inner-container {
+  font-family: "Press Start 2P", cursive;
+  width: 100%;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 40%;
+  border: 3px solid #333;
+  margin: auto;
+}
+
+.box {
+  width: 22%;
+  height: 30%;
+  border: 3px solid #333;
+  border-radius: 5%;
+  margin: auto;
+  opacity: 0;
+  text-align: center;
+  line-height: 700%;
+}
+
+.active {
+  opacity: 1;
+  /* vertical-align: middel; */
+}
+
+.score-board {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.time {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.start-button {
+  margin-bottom: 5rem;
+  border: 3px solid #333;
+  width: 15%;
+  margin: auto auto 3rem auto;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  transition-property: background, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.start-button:hover {
+  background: #333;
+  color: #fff;
+}
+
+@media only screen and (max-width: 310px) {
+  .box-container {
+    /* width: 300px;
+        height: 210px; */
+    font-size: 6px;
+    margin: auto;
+  }
+  .score-board {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .time {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .start-button {
+    width: 37%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .box-container {
+    /* width: 300px;
+        height: 210px; */
+    font-size: 6px;
+    margin: auto;
+  }
+  .score-board {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .time {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .start-button {
+    width: 37%;
+  }
+}
